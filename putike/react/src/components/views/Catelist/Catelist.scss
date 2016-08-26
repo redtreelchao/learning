@@ -1,0 +1,30 @@
+.homewrapper{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+ .search {
+ 	width: 100%;
+ 	height: 100%;
+    position: fixed;
+    background: #fff;
+    z-index:1000;
+    right: 100%;
+  }
+
+.no_result{
+	width:90%;
+	height:56px;
+	margin:auto;
+	margin-top:20px;
+	background-color: #f4f4f4;
+	p{
+			font-family: STHeitiSC-Light;
+			font-size: 12px;
+			letter-spacing: 0.3px;
+			color: #9b9b9b;
+			line-height: 56px;
+			padding:0 10%;
+	}
+}

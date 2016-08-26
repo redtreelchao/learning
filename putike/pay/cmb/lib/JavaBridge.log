@@ -1,0 +1,29 @@
+Aug 07 10:43:31 JavaBridge INFO : VM                  : 1.7.0_51@http://java.oracle.com/
+Aug 07 10:43:31 JavaBridge INFO : JavaBridge version             : 6.2.1    
+Aug 07 10:43:31 JavaBridge INFO : logFile             : JavaBridge.log
+Aug 07 10:43:31 JavaBridge INFO : default logLevel    : 3
+Aug 07 10:43:31 JavaBridge INFO : socket              : HTTP_LOCAL:8081
+Aug 07 10:43:31 JavaBridge INFO : java.ext.dirs       : F:\Program Files\Java\jre7\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+Aug 07 10:43:31 JavaBridge INFO : php.java.bridge.base: C:\Documents and Settings\ho098222
+Aug 07 10:43:31 JavaBridge INFO : thread pool size    : 20
+Aug 07 10:43:31 JavaBridge INFO : JavaBridgeRunner started on port INET_LOCAL:8081
+Aug 07 10:43:50 JavaBridge ERROR: An exception occured: java.lang.ClassNotFoundException: StringBuffer
+java.lang.ClassNotFoundException: StringBuffer
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at php.java.bridge.Util.classForName(Util.java:1518)
+	at php.java.bridge.JavaBridge.CreateObject(JavaBridge.java:445)
+	at php.java.bridge.Request.handleRequest(Request.java:458)
+	at php.java.bridge.Request.handleRequests(Request.java:500)
+	at php.java.bridge.JavaBridge.handleRequests(JavaBridge.java:150)
+	at php.java.bridge.JavaBridgeRunner.doPut(JavaBridgeRunner.java:207)
+	at php.java.bridge.http.HttpServer.service(HttpServer.java:289)
+	at php.java.bridge.http.HttpServer$Runner.run(HttpServer.java:205)
+	at php.java.bridge.ThreadPool$Delegate.run(ThreadPool.java:60)

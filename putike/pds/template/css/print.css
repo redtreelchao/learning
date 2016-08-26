@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@media (min-width: 1200px) {
+  /* line 14, ../sass/print.scss */
+  .container {
+    width: 1200px; } }
+
+/* line 19, ../sass/print.scss */
+body {
+  background-color: #eeeeee; }
+
+/* line 22, ../sass/print.scss */
+.intro {
+  border: 1px solid #bfbfbf;
+  margin-bottom: 30px;
+  padding: 0;
+  font-family: "微软雅黑", "Microsoft YaHei", "Microsoft JhengHei", "Times New Roman", Georgia, Serif;
+  font-weight: 800; }
+  /* line 29, ../sass/print.scss */
+  .intro h2 {
+    text-align: center;
+    font-size: 42px;
+    background: #0165a3;
+    margin: 0 auto;
+    color: #ffffff;
+    line-height: 80px; }
+    /* line 36, ../sass/print.scss */
+    .intro h2 strong {
+      font-weight: normal;
+      color: #ffd102; }
+  /* line 41, ../sass/print.scss */
+  .intro .con {
+    position: relative; }
+    /* line 43, ../sass/print.scss */
+    .intro .con .btn1 {
+      position: absolute;
+      top: 150px;
+      right: 290px; }
+    /* line 48, ../sass/print.scss */
+    .intro .con .btn2 {
+      position: absolute;
+      top: 150px;
+      right: 80px; }
+    /* line 53, ../sass/print.scss */
+    .intro .con .btn3 {
+      position: absolute;
+      top: 60px;
+      right: 510px; }
+    /* line 58, ../sass/print.scss */
+    .intro .con .btn4 {
+      position: absolute;
+      top: 60px;
+      right: 290px; }
+    /* line 63, ../sass/print.scss */
+    .intro .con .btn5 {
+      position: absolute;
+      top: 60px;
+      right: 70px; }
+
+/* line 70, ../sass/print.scss */
+.scroll {
+  padding: 0;
+  margin-bottom: 30px;
+  border: 1px solid #bfbfbf;
+  margin-bottom: 30px; }
+  /* line 74, ../sass/print.scss */
+  .scroll .nav-tabs {
+    border-bottom: none; }
+    /* line 76, ../sass/print.scss */
+    .scroll .nav-tabs li {
+      margin-bottom: 0; }
+      /* line 78, ../sass/print.scss */
+      .scroll .nav-tabs li > a {
+        border: none;
+        border-radius: 0;
+        color: #ffffff;
+        outline: none;
+        font-size: 18px;
+        padding: 10px 35px; }
+        /* line 85, ../sass/print.scss */
+        .scroll .nav-tabs li > a:hover, .scroll .nav-tabs li > a :focus {
+          background: #226AD1;
+          color: #ffffff; }
+    /* line 91, ../sass/print.scss */
+    .scroll .nav-tabs li.active > a, .scroll .nav-tabs li.active > a:hover, .scroll .nav-tabs li.active > a:focus {
+      background: #226ad1;
+      border: none;
+      border-radius: none;
+      color: #ffffff;
+      outline: none; }
+  /* line 99, ../sass/print.scss */
+  .scroll .nav-tabs > li.active > a, .scroll .nav-tabs > li.active > a:hover, .scroll .nav-tabs > li.active > a:focus {
+    background: #226ad1;
+    border: none;
+    border-radius: none; }
+  /* line 104, ../sass/print.scss */
+  .scroll .tab-content {
+    padding: 10px 0 20px;
+    background: #ffffff;
+    text-align: center;
+    line-height: 1.5; }
+
+/* line 111, ../sass/print.scss */
+footer {
+  font-family: "微软雅黑", "Microsoft YaHei", "Microsoft JhengHei", "Times New Roman", Georgia, Serif; }
+  /* line 113, ../sass/print.scss */
+  footer .footer1 {
+    background: #2c2f34;
+    color: #808182;
+    padding: 35px 0 35px;
+    border-bottom: 1px solid #414449; }
+    /* line 118, ../sass/print.scss */
+    footer .footer1 img {
+      -moz-transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease; }
+    /* line 121, ../sass/print.scss */
+    footer .footer1 img:hover {
+      -moz-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+      -webkit-transform: translateX(-10px);
+      transform: translateX(-10px); }
+    /* line 124, ../sass/print.scss */
+    footer .footer1 p {
+      text-align: center;
+      vertical-align: middle; }
+  /* line 129, ../sass/print.scss */
+  footer .footer2 {
+    background: #32353a;
+    padding: 60px 0 75px;
+    font-size: 12px;
+    border-bottom: 1px solid #414449; }
+    /* line 134, ../sass/print.scss */
+    footer .footer2 .ft-header {
+      font-size: 1.143em;
+      color: #d9d9d9;
+      line-height: 2; }
+      /* line 138, ../sass/print.scss */
+      footer .footer2 .ft-header img {
+        display: block;
+        margin-bottom: 1.200em; }
+      /* line 142, ../sass/print.scss */
+      footer .footer2 .ft-header span {
+        font-size: 1.500em; }
+    /* line 146, ../sass/print.scss */
+    footer .footer2 .ft-con {
+      padding-left: 5.429em;
+      color: #757d83;
+      line-height: 2.000em; }
+      /* line 150, ../sass/print.scss */
+      footer .footer2 .ft-con h4 {
+        color: #f2f2f2;
+        font-size: 1.2em; }
+      /* line 154, ../sass/print.scss */
+      footer .footer2 .ft-con a {
+        color: #757d83; }
+        /* line 156, ../sass/print.scss */
+        footer .footer2 .ft-con a:link, footer .footer2 .ft-con a:hover {
+          text-decoration: none; }
+  /* line 162, ../sass/print.scss */
+  footer .footer3 {
+    font-size: 12px;
+    background: #383b40;
+    padding: 30px 0;
+    color: #ffffff;
+    line-height: 2; }
+    /* line 168, ../sass/print.scss */
+    footer .footer3 .links {
+      cursor: pointer; }
+      /* line 170, ../sass/print.scss */
+      footer .footer3 .links a {
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        *zoom: 1;
+        *display: inline;
+        margin: 0 3px;
+        color: #ffffff; }
+        /* line 174, ../sass/print.scss */
+        footer .footer3 .links a:link, footer .footer3 .links a:hover {
+          text-decoration: none; }
+    /* line 179, ../sass/print.scss */
+    footer .footer3 .authentication {
+      margin-top: 1em; }
+      /* line 181, ../sass/print.scss */
+      footer .footer3 .authentication a {
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        *zoom: 1;
+        *display: inline;
+        margin-right: 1.571em; }
+    /* line 187, ../sass/print.scss */
+    footer .footer3 .col-md-3 span {
+      display: block;
+      float: left;
+      margin: 0 1.2em;
+      text-align: center;
+      line-height: 2; }
+      /* line 193, ../sass/print.scss */
+      footer .footer3 .col-md-3 span img {
+        display: block; }

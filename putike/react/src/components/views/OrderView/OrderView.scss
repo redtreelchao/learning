@@ -1,0 +1,232 @@
+.orderWrapper{
+  padding-top:72px;
+}
+
+.product_body {
+  background: #f6f6f6;
+  font-family: STHeitiSC-Light;
+  .tips{
+    height: 29px;
+    font-family: SourceHanSansCN-Normal;
+    font-size: 12px;
+    color: #9b9b9b;
+    width: 70%;
+    margin: auto;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+.porduct_content {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  ul {
+    list-style: none;
+    text-align: left;
+    padding: 20px 8%;
+    li {
+      text-align: left;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+  }
+}
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    color: #ffa413;
+}
+
+.info_block {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    font-family: STHeitiSC-Light;
+
+
+    .info_wrapper{
+      padding: 3% 8%;
+      width: 100%;
+      height: 100%;
+
+    }
+  .imgwrapper{
+    width: 40%;
+    height: 82px;
+    float: left;
+    background: black;
+     img{
+         width: 100%;
+      height: 100%;
+      }
+  }
+  .proc_info{
+    width: 60%;
+    height: 100%;
+    padding:3% 0 0 5%;
+    float: left;
+    text-align: right;
+
+    p{
+      font-size: 15px;
+      letter-spacing: 0.4px;
+      color: #333333;
+      line-height: 20px;
+    }
+    .subtitle{
+      margin-top: 10px;
+      font-size: 12px;
+      letter-spacing: 0.3px;
+      color: #333333;
+    }
+  }
+  .order_status{
+    height: 64px;
+    line-height: 64px;
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    color: #2d2d2d;
+    padding: 0 8%;
+    font-family: STHeitiSC-Medium;
+    box-shadow: inset 0 -1px 0 0 rgba(229, 229, 229, 0.5);
+  }
+  .info_list{
+    height: 64px;
+    line-height: 64px;
+    padding: 0 8%;
+    box-shadow: inset 0 -1px 0 0 rgba(229, 229, 229, 0.5);
+    .use_status{
+      margin-left: 50px;
+    }
+    .info_title{
+      font-family: STHeitiSC-Medium;
+    }
+  }
+
+    .porduct_title {
+        width: 100%;
+        height: 72px;
+        padding: 0 10%;
+        box-shadow: inset 0 -1px 0 0 rgba(229, 229, 229, 0.5);
+        .main_title {
+            font-size: 18px;
+            line-height: 72px;
+            letter-spacing: 0.5px;
+            color: #333333;
+            text-align: left;
+            float: left;
+        }
+        .closebtn{
+          float: right;
+            line-height: 72px;
+            color: #ffa413;
+        }
+    }
+    // .porduct_content {
+    //     .rules {
+    //         font-family: ArialMT;
+    //         font-size: 14px;
+    //         line-height: 1.6;
+    //         letter-spacing: 1px;
+    //         padding: 20px 15%;
+    //         li {
+    //             margin-left: 0;
+    //             list-style: disc;
+    //         }
+    //     }
+    //     .refund {
+    //         font-family: ArialMT;
+    //         font-size: 14px;
+    //         line-height: 1.6;
+    //         letter-spacing: 1px;
+    //         padding: 20px 10%;
+    //         li {
+    //             margin-left: 0;
+    //         }
+    //     }
+    //     ul {
+    //         list-style: none;
+    //         text-align: left;
+    //         padding: 20px 8%;
+    //         li {
+    //             text-align: left;
+    //             line-height: 20px;
+    //             margin-bottom: 15px;
+    //         }
+    //     }
+    //     p {
+    //         padding: 10px 0;
+    //         width: 80%;
+    //         margin: auto;
+    //         font-size: 15px;
+    //         line-height: 1.5;
+    //         letter-spacing: 1.1px;
+    //         color: #333333;
+    //         img {
+    //             width: 125%;
+    //             margin-left: -12.5%;
+    //         }
+    //     }
+    // }
+
+}
+
+.refund_wrapper{
+  width: 100%;
+  position: fixed;
+  bottom:45px;
+
+  .info_block{
+    margin-bottom: 0;
+  }
+}
+
+.askrefund{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  position:fixed;
+  bottom:0;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid 1px #eeeeee;
+}
+
+.shadow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.refund_tag p{
+    height: 43px;
+    padding:0 10px;
+    line-height: 43px;
+    text-align: center;
+    margin:3% 0 3% 8%;
+    float: left;
+    border-radius: 86px;
+    border: solid 1px #f5f5f5;
+}
+
+.refund_text{
+  width: 84%;
+  margin:auto;
+}
+
+.refund_text textarea{
+  width: 100%;
+  height: 100px;
+    font-family: SourceHanSansCN-Normal;
+  font-size: 12px;
+  color: #9b9b9b;
+  padding: 10px;
+}
+
+.red{
+  color: #ffa413;
+}

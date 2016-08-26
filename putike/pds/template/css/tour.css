@@ -1,0 +1,34 @@
+
+.detail-day { position:relative; border-bottom:1px solid #eee; }
+.day { position:relative; margin-bottom:15px; z-index:999; }
+.day .num { background:#fafafa; font-weight:bold; font-size:20px; padding:10px; }
+.day .btn-group { position:absolute; right:30px; top:12px; }
+
+.create-point,
+.create-day { display:block; padding:20px 10px; text-align:center; margin-top:-15px; margin-bottom:15px; font-size:16px; color:#ccc; border:#ccc dashed 2px; border-radius:10px; }
+.create-point:hover,
+.create-day:hover { text-decoration:none; color:#999; border-color:#999; }
+
+.template {}
+
+@media (min-width:992px) {
+	.detail-day { padding-top:30px; }
+	.day { position:absolute; left:15px; top:0; width:10%; max-width:80px; margin-left:4%; padding:0; text-align:center; }
+	.day:before { content:""; display:block; padding-top:100%; border-radius:50%; background:#eee; }
+	.day .num { position:absolute; top:50%; width:100%; text-align:center; padding:0; font-size:14px; font-weight:normal; line-height:1; margin-top:-7px; background:transparent; }
+	.day .btn-group { right:auto; top:auto; bottom:-30px; left:50%; margin-left:-23px; }
+}
+
+.image-upload .image { background-size:cover; background-position:center; }
+
+.tour-name-drop { display:none; position:absolute; z-index:1010; -webkit-box-sizing:border-box; box-sizing:border-box; padding:5px 0px; border:1px solid rgba(0,0,0,.15); border-radius:4px; background:#fff; box-shadow:0 6px 12px rgba(0,0,0,.175);
+}
+
+.tour-name-drop ul { position:relative; overflow-x:hidden; overflow-y:auto; margin:0 0px 4px 0; padding:4px 0 0 0px; max-height:240px; -webkit-overflow-scrolling:touch;
+}
+
+.tour-name-drop li { padding:5px 15px; list-style:none; line-height:1.5; cursor:pointer;
+}
+
+.tour-name-drop li.active { background:#f0f0f0;
+}

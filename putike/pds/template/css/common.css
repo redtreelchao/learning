@@ -1,0 +1,356 @@
+/*reset*/
+@charset 'utf-8';
+
+/*body,div,h1,h2,h3,input,ul,li,p { margin: 0; padding: 0; }
+header,section,footer,article,fieldset { display: block; }
+video { display: none; }
+fieldset , a imgs { border: 0; }
+imgs { -webkit-touch-callout: none; max-width: 100%; }
+a,imgs,input[type="radio"] { -webkit-tap-highlight-color: transparent; }
+h1,h2,h3,strong { font-weight: normal; line-height: 1; }
+a { text-decoration: none; }
+input { -webkit-appearance: none; border-radius: 0; }
+ul,li { list-style: none; }
+em { font-style: normal; }
+html , body { height: 100%; }
+html { -webkit-text-size-adjust: 100%; }
+body { font-size: 14px; background: #f5f5f5; -webkit-userselect: none; user-select: none; }
+imgs , input , label { -webkit-appearance: none; -webkit-tap-highlight-color: transparent; }
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+.clearfix:before , .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+html , body { height: 100%; }*/
+.hidden { display: none !important; }
+.white { background: #fff; }
+
+
+/**************
+ *	
+ *	布局
+ *	
+**************/
+
+#preview #main ,
+#preview footer , #preview .custom-pay-tel { position: absolute; width: 100%; }
+#preview #main { top: 0; bottom: 0; left: 0; overflow: auto; -webkit-overflow-scrolling: touch; -webkit-box-sizing: border-box; box-sizing: border-box; }
+#preview footer , .custom-pay-tel { position: absolute; bottom: 0; }
+#preview footer { height: 49px; }
+#preview footer + #main { bottom: 49px; }
+#preview .custom-pay-tel { height: 130px; }
+#preview .custom-pay-tel + #main { bottom: 130px; }
+/*#preview { max-width: 375px; margin: 0 auto; background: #f5f5f5; border: 1px solid #ccc; }*/
+
+
+/**************
+ *	
+ *	按钮
+ *	
+**************/
+
+#preview .btn { display: block; height: 49px; color: #fff; border: 0; outline: 0; letter-spacing: 3px; }
+#preview a.btn , #preview span.btn { text-align: center; line-height: 49px; }
+
+#preview .btn-blue { background: #295da6; }
+#preview .btn-red { background: #c01639; }
+
+#preview .btn-font-small { font-size: 15px; }
+#preview .btn-font-middle { font-size: 18px; }
+
+/**************
+ *	
+ *	行程定制卡
+ *	
+**************/
+.custom-card-list { padding: 0 10px 30px; }
+.custom-card-list .custom-card-list-item { margin-top: 10px; display: block; }
+.custom-card-list .custom-card-photo { height: 125px; overflow: hidden; }
+.custom-card-list .custom-card-photo imgs { vertical-align: middle; }
+.custom-card-list .custom-card-content { height: 74px; background: #fff; }
+.custom-card-list .custom-card-content > .pull-right { width: 118px; height: 36px; margin-top: 19px; border-left: 1px solid #ccc; font-size: 12px; color: #2c3965; text-align: center; padding-left: 17px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.custom-card-list .custom-card-content > .pull-right > span[class*="icon-card-"] { display: block; width: 15px; height: 15px; margin: 0 auto 7px; background-repeat: no-repeat; background-size: cover; }
+.custom-card-list .custom-card-content > .status-pay { color: #c01639; }
+.custom-card-list .custom-card-name { height: 100%; padding: 17px 0 0 14px; letter-spacing: 1px; color: #2c3965; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.custom-card-list .custom-card-name h2 { font-size: 15px; padding-right: 10px; overflow: hidden; white-space:nowrap; text-overflow:ellipsis; }
+.custom-card-list .custom-card-name small { display: block; margin-top: 10px; }
+
+.icon-card-pay  { background-image: url(../imgs/icon-card-pay.png); }
+.icon-card-wait { background-image: url(../imgs/icon-card-wait.png); }
+.icon-card-over { background-image: url(../imgs/icon-card-over.png); }
+
+
+/**************
+ *	
+ *	表单
+ *	申请发票
+ *	
+**************/
+
+.form { padding: 0 20px; background: #fff; color: #2c3965; font-size: 15px; }
+.form .form-control { height: 58px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.form .form-control:not(:last-child) { border-bottom: 1px solid #d8d8d8; }
+.form .form-control label { position: absolute; width: 5em; line-height: 58px; }
+.form .form-control input { width: 100%; height: 100%; border: 0; outline: 0; padding-left: 5em; font-size: 15px; color: #2c3965; text-align: right; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.custom-invoice .form { margin-bottom: 10px; }
+
+
+/**************
+ *	
+ *	发票详情/申请状态/邮寄
+ *	
+**************/
+
+.custom-invoice { letter-spacing: 1px; }
+.custom-invoice .custom-invoice-header ,
+.custom-invoice .custom-invoice-detail { padding: 0 21px; }
+.custom-invoice .custom-invoice-header { height: 95px; margin: 0 21px; border-bottom: 1px solid #d8d8d8; position: relative; text-align: center; }
+.custom-invoice .custom-invoice-header h2 { font-size: 18px; font-weight: bold; padding: 20px 0 13px; }
+.custom-invoice .custom-invoice-header strong { font-size: 15px; }
+.custom-invoice .custom-invoice-header span { position: absolute; width: 88px; font-size: 15px; line-height: 1; background: #fff; color: #999; left: 50%; bottom: -7px; z-index: 11; margin-left: -44px; }
+.custom-invoice .custom-invoice-detail { margin-top: 8px; }
+.custom-invoice .custom-invoice-item { padding: 20px 5px; border-bottom: 1px solid #d8d8d8; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.custom-invoice .custom-invoice-item label ,
+.custom-invoice .custom-invoice-item span { display: block; color: #2d2d2d; font-size: 15px; line-height: 1.8; }
+
+/**************
+ *	
+ *	说明书/文章
+ *	
+**************/
+
+.custom-article article { padding: 20px 30px 30px; line-height: 18px; color: #2c3965; }
+.custom-article h2 { font-size: 15px; padding: 10px 0 25px 0; }
+.custom-article p { font-size: 12px; margin-bottom: 20px; }
+
+/**************
+ *	
+ *	设计师
+ *	
+**************/
+.custom-designer { text-align: center; letter-spacing: 1px; color: #2c3965; }
+.custom-designer small { position: absolute; width: 100%; left: 0; bottom: 20px; line-height: 1; }
+.custom-designer-photo { padding: 47px 0 70px; }
+.custom-designer-photo imgs { display: block; width: 97px; height: 97px; border-radius: 50%; margin: 0 auto; }
+.custom-designer-photo h3 { font-size: 20px; line-height: 1; padding: 20px 0; }
+.custom-designer-photo p { font-size: 15px; line-height: 24px; }
+
+.custom-designer-contact > strong { display: block; text-align: left; font-size: 15px; width: 134px; margin: 0 auto; padding: 20px 0 20px 70px; }
+.custom-designer-contact > strong:first-child { background: url(../imgs/des-wchat.png) 30px center no-repeat; background-size: 25px 20px; border-bottom: 1px solid #d8d8d8; }
+.custom-designer-contact > strong:last-child { background: url(../imgs/des-email.png) 30px center no-repeat; background-size: 25px 15px; }
+
+/**************
+ *	
+ *	支付
+ *	
+**************/
+.custom-pay-info-header ,
+.custom-pay-type-header { background: #c01639; color: #fff; line-height: 1; letter-spacing: 1px; text-align: center; }
+.custom-pay-type-header { height: 115px; }
+.custom-pay-type-header h2 { font-size: 30px; padding: 30px 0 20px; }
+.custom-pay-type-header h2 span { font-size: 14px; vertical-align: middle; }
+.custom-pay-type-header label { display: block; }
+.custom-pay-type-header small { letter-spacing: 1px; }
+.custom-pay-type-header input[type="checkbox"] { width: 12px; height: 12px; border: 1px solid #fff; border-radius: 1px; vertical-align: -2px; }
+.custom-pay-type-header input[type="checkbox"]:checked { background: url(../imgs/checked.png) no-repeat; background-size: contain; }
+
+.custom-pay-info-header { height: 85px; }
+.custom-pay-info-header .custom-pay-info-type { font-size: 12px; padding: 20px 0 10px; }
+.custom-pay-info-header .custom-pay-info-type strong { font-weight: bold; }
+.custom-pay-info-header h2 { font-size: 24px; }
+
+.custom-pay-type-title { padding: 0 15px; }
+.custom-pay-type-title h2 { font-size: 15px; color: #2c3965; padding-left: 33px; line-height: 76px; border-bottom: 1px solid #e8e8e8; }
+
+.custom-pay-type-list { padding: 0 25px; }
+.custom-pay-type-list .custom-pay-type-item { display: block; height: 53px; line-height: 53px; font-size: 14px; color: #2c3965; background: url(../imgs/pay-item.png) 95% center no-repeat; background-size: 8px 13px; border-bottom: 1px solid #e8e8e8; }
+.custom-pay-type-list .custom-pay-type-item > span { float: left; background-repeat: no-repeat; background-size: cover; }
+.custom-pay-type-list .pay-type1 { width: 29px; height: 17px; margin: 18px 88px 0 23px; background-image: url(../imgs/pay-type1.png); }
+.custom-pay-type-list .pay-type2 { width: 25px; height: 25px; margin: 14px 90px 0 24px; background-image: url(../imgs/pay-type2.png); }
+.custom-pay-type-list .pay-type3 { width: 28px; height: 23px; margin: 15px 89px 0 23px; background-image: url(../imgs/pay-type3.png); }
+
+.custom-pay-step-list { padding: 10px 0 0; }
+.custom-pay-step-list .custom-pay-step-item { height: 61px; margin-bottom: 10px; position: relative; }
+.custom-pay-step-list .custom-pay-step-item label { display: block; font-size: 15px; color: #1c4d92; text-align: center; }
+.custom-pay-step-list .custom-pay-step-price { position: absolute; top: 0; right: 0; height: 61px; line-height: 61px; font-size: 15px; color: #1c4d92; background-color: #fff; padding: 0 23px 0 28px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.custom-pay-step-list .custom-pay-step-price:before { content: ''; position: absolute; left: -14px; width: 0; height: 0; border: 7px solid; border-color: transparent #fff transparent transparent; }
+.custom-pay-step-list .custom-pay-step-price a { font-size: 14px; width: 75px; text-align: left; }
+.custom-pay-step-list .custom-pay-step-price .pay-over { color: #1c4d92; }
+.custom-pay-step-list .custom-pay-step-price .pay-now { color: #c01639; background: url(../imgs/pay-now.png) right center no-repeat; background-size: 8px 13px; }
+
+.custom-pay .custom-pay-step-item { line-height: 61px; }
+.custom-pay .custom-pay-step-item label { width: 74px; }
+.custom-pay .custom-pay-step-price { left: 74px; line-height: 61px; }
+.custom-pay .custom-pay-step-price:before { top: 23px; }
+
+
+.custom-pay-info .custom-invoice-detail { background: #fff; }
+.custom-pay-info .custom-invoice-detail .custom-invoice-item:last-child { border-bottom-color: #fff; }
+
+.custom-pay-info .custom-pay-info-des { height: 29px; background: #f5f5f5; padding: 15px 25px 0; font-size: 12px; color: #999; }
+
+.custom-pay-tel { background: #fff; }
+.custom-pay-tel .custom-pay-tel-msg { height: 81px; padding: 25px; font-size: 15px; color: #2d2d2d; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/**************
+ *	
+ *	定制卡 -- 定制前信息
+ *	
+**************/
+.custom-before-header { text-align: center; color: #fff; background: url(../imgs/custom-before.png); height: 115px; background-size: cover; }
+.custom-before-header h2 { font-size: 18px; font-weight: bold; letter-spacing: 2px; padding: 35px 0 10px; }
+.custom-before-header span { font-size: 12px; letter-spacing: 1px; }
+
+.custom-before .custom-before-nav { height: 70px; }
+.custom-before .custom-before-nav a { float: left; width: 50%; line-height: 70px; text-align: center; color: #1c4d92; }
+.custom-before .custom-before-nav span { display: inline-block; vertical-align: -3px; height: 14px; background-repeat: no-repeat; background-size: cover; }
+.custom-before .custom-before-nav a.on { color: #c01639; }
+.custom-before .custom-before-nav a.on .icon-b-detail { background-image: url(../imgs/icon-b-detail.png); }
+.custom-before .custom-before-nav a.on .icon-b-msg { background-image: url(../imgs/icon-b-msg.png); }
+.custom-before .custom-before-nav i { position: absolute; top: -12px; right: -12px; width: 23px; height: 23px; line-height: 23px; background: #c01639; color: #fff; text-align: center; font-style: normal; border-radius: 50%; font-size: 14px; -webkit-transform: scale(.5); transform: scale(.5);  }
+.custom-before .custom-before-article:first-child { background: #fff; }
+
+.custom-before .custom-before-detail { padding: 0 10px; position: relative; }
+.custom-before .custom-before-item { padding: 0 0 25px; }
+.custom-before .custom-before-item:first-child { padding-bottom: 10px; }
+.custom-before .custom-before-item:not(:last-child) { border-bottom: 1px solid #e8e8e8; }
+.custom-before .custom-before-item[class*="icon-b-"] { padding-left: 61px; }
+.custom-before .custom-before-item h3 { padding: 21px 0 16px; font-size: 12px; color: #999; line-height: 1; }
+.custom-before .custom-before-item span { font-size: 14px; color: #2c3965; }
+.custom-before .custom-before-item > .pull-left:first-child { padding-right: 70px; }
+.custom-before .span-flex,
+.custom-before .span-float { overflow: hidden; }
+.custom-before .span-float span { float: left; margin: 0 15px 15px 0; }
+.custom-before .span-flex span { float: left; width: 50%; position: relative; }
+.custom-before .span-flex i { font-size: 12px; font-style: normal; padding-left: 4px; }
+.custom-before .span-block span { display: block; margin-bottom: 10px; }
+
+.custom-before .custom-before-msg { position: relative; padding: 0 10px; }
+.custom-before .custom-msg-item { background: #fff; margin-bottom: 12px; padding: 25px 27px 23px; }
+.custom-before .custom-msg-item h2 ,
+.custom-before .custom-msg-item p { color: #2c3965; }
+.custom-before .custom-msg-item h2 { font-size: 15px; font-weight: bold; padding-bottom: 10px; }
+.custom-before .custom-msg-item p { font-size: 13px; line-height: 20px; padding-top: 15px; }
+.custom-before .custom-msg-item small { color: #999; padding-left: 3px; }
+
+.custom-before .custom-before-detail:before ,
+.custom-before .custom-before-msg:before { content: ''; position: absolute; top: -16px; border: 8px solid; border-color: transparent transparent #fff transparent; }
+.custom-before .custom-before-detail:before { left: 88px; }
+.custom-before .custom-before-msg:before { right: 88px; }
+
+.icon-b-city { background: url(../imgs/icon-b-city.png) 17px 26px no-repeat; background-size: 19px 18px; }
+.icon-b-person { background: url(../imgs/icon-b-person.png) 17px 21px no-repeat; background-size: 19px 17px; }
+.icon-b-date { background: url(../imgs/icon-b-date.png) 17px 22px no-repeat; background-size: 19px 18px; }
+.icon-b-grade { background: url(../imgs/icon-b-grade.png) 17px 22px no-repeat; background-size: 19px 11px; }
+.icon-b-des { background: url(../imgs/icon-b-des.png) 17px 26px no-repeat; background-size: 18px 17px; }
+.icon-b-price { background: url(../imgs/icon-b-price.png) 17px 26px no-repeat; background-size: 18px 16px; }
+.icon-b-contact { background: url(../imgs/icon-b-contact.png) 17px 22px no-repeat; background-size: 19px 12px; }
+
+.icon-b-detail { width: 14px; background-image: url(../imgs/icon-b-detail1.png); margin-right: 11px; }
+.icon-b-msg { width: 15px; background-image: url(../imgs/icon-b-msg1.png); position: relative; margin-right: 17px; position: relative; }
+
+/**************
+ *	
+ *	定制卡 -- 我的定制卡
+ *	
+**************/
+.custom-my { color: #2c3965; letter-spacing: 1px; }
+.custom-my-header { color: #fff; text-align: center; height: 115px; background: url(../imgs/custom-my.png) no-repeat; background-size: cover; }
+.custom-my-header h2 { font-size: 15px; font-weight: bold; padding: 20px 0 10px; letter-spacing: 2px; }
+.custom-my-header > span { font-size: 12px; letter-spacing: 1px; }
+.custom-my-header .nav { margin: 15px auto 0; width: 224px; }
+.custom-my-header .nav a { width: 100px; height: 24px; line-height: 22px; color: #fff; letter-spacing: 1px; text-align: center; font-size: 12px; border-radius: 12px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); -webkit-box-sizing: border-box; box-sizing: border-box; }
+.custom-my-header .nav a:nth-child(even) { margin-left: 24px; }
+.custom-my-header .nav span { display: inline-block; vertical-align: -2px; margin-right: 10px; width: 11px; height: 11px; background-size: cover; }
+
+.icon-m-card { background-image: url(../imgs/icon-m-card.png); }
+.icon-m-msg { background-image: url(../imgs/icon-m-msg.png); }
+
+.custom-my-designer { background: #fff; padding: 20px 25px 25px; position: relative; min-height: 70px; }
+.custom-my-designer .custom-my-photo { position: absolute; width: 80px; }
+.custom-my-designer .custom-my-photo img { display: block; margin: 0 auto 7px; width: 52px; height: 52px; border-radius: 50%; background-size: cover; }
+.custom-my-designer .custom-my-photo strong { display: block; text-align: center; font-size: 15px; line-height: 1; }
+.custom-my-designer .custom-my-detail { padding-left: 100px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.custom-my-designer .custom-my-detail h2 { font-size: 15px; padding: 10px 0 15px; }
+.custom-my-designer .custom-my-detail p { font-size: 12px; line-height: 18px; }
+
+.custom-my .custom-my-list { padding-top: 15px; }
+.custom-my .custom-pay-step-item label { width: 54px; padding-top: 12px; }
+.custom-my .custom-pay-step-item em { display: block; width: 20px; height: 20px; line-height: 20px; font-size: 12px; margin: 5px auto 0; background: #1c4d92; border-radius: 50%; text-align: center; color: #fff; }
+.custom-my .custom-pay-step-price { left: 54px; font-size: 13px; line-height: 20px; color: #2c3965; background: #fff url(../imgs/pay-item.png) 92% center no-repeat; background-size: 8px 13px; }
+.custom-my .custom-pay-step-price:before { top: 36px; }
+.custom-my .custom-pay-step-price p { position: absolute; top: 50%; padding-right: 50px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.custom-my .icon + .custom-pay-step-price:before { top: 23px; }
+
+.custom-my-total { height: 115px; margin: 15px 0 11px; background: #fff; text-align: center; }
+.custom-my-total h2 { font-size: 30px; color: #c01639; padding: 18px 0 10px; }
+.custom-my-total h2 small { font-size: 15px; }
+.custom-my-total span ,
+.custom-my-total strong { display: block; }
+.custom-my-total span { font-size: 12px; }
+.custom-my-total strong { font-size: 15px; padding-top: 12px; }
+.custom-my-total2 h2 { padding: 25px 0 5px; }
+
+.icon-m-price , .icon-m-pdf { display: block; width: 20px; background-size: cover; margin: 8px auto 0; }
+.icon-m-price { height: 18px; background-image: url(../imgs/icon-m-price.png); }
+.icon-m-pdf { height: 20px; background-image: url(../imgs/icon-m-pdf.png); }
+
+/**************
+ *	
+ *	定制卡 -- 正常尺寸
+ *	
+**************/
+
+.custom	{ line-height: 1; }
+.custom header { position: relative; letter-spacing: 2px; height: 154px; color: #fff; background: #222a3f; text-align: center; }
+.custom header h2 { font-size: 36px; padding: 40px 0 24px; }
+.custom header small { font-size: 18px; }
+.custom .progress { position: absolute; height: 4px; background: #008def; bottom: 0; left: 0; }
+
+.custom .custom-item-header { height: 128px; line-height: 128px; background: #335f9d; border-bottom: 2px solid #1c4d92; padding: 0 90px 0 72px; -webkit-transition: all .3s; transition: all .3s; }
+.custom .custom-item-header .custom-header-label { font-size: 24px; color: rgba(255,255,255,.5); }
+.custom .custom-item-header .custom-header-label span { display: inline-block; vertical-align: text-bottom; }
+.custom .custom-header-val .val { border: none; max-width: 300px; height: 100%; color: #fff; background: transparent; font-size: 36px; text-align: right; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.custom .custom-header-val .icon-bottom { display: inline-block; vertical-align: baseline; background: url(../imgs/icon-bottom.png); width: 26px; height: 16px; margin-left: 25px; -webkit-transition: all .3s; transition: all .3s; }
+.custom .custom-header-val .active { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+/**************
+ *	
+ *	定制卡 -- icon 自画
+ *	
+**************/
+
+.icon-city { background: url(../imgs/icon-city.png); width: 38px; height: 35px; margin: 0 24px 0 0; }
+.icon-person { background: url(../imgs/icon-person.png); width: 38px; height: 39px; margin-right: 24px; }
+.icon-star { background: url(../imgs/icon-star.png); width: 37px; height: 31px; margin-right: 25px; }
+.icon-grade { background: url(../imgs/icon-grade.png); width: 33px; height: 21px; margin-right: 34px; }
+.icon-ps { background: url(../imgs/icon-ps.png); width: 30px; height: 33px; margin-right: 34px; }
+.icon-price { background: url(../imgs/icon-price.png); width: 32px; height: 32px; margin-right: 35px; }
+.icon-contact { background: url(../imgs/icon-contact.png); width: 32px; height: 24px; margin-right: 35px; }
+
+#page { position: absolute; top: 54px; bottom: 49px; width: 100%; background: #f5f5f5; overflow: auto; -webkit-overflow-scrolling: touch; z-index: 9; }
+#page .custom-my-list { padding-top: 1px; }
+#page .custom-pay-step-item { margin-bottom: 0; border-top: 1px solid #f5f5f5; border-bottom: 1px solid #f5f5f5; }
+#page article { background: #fff; font-size: 13px; line-height: 20px; padding: 20px 15px 18px;}
+#page article img { display: block; margin: 10px auto 20px; max-width: 100%; }
+.frame { display: none; background: #fff; }
+.frame header { position: absolute; top: 0; width: 100%; height: 54px; background: #295da6; padding: 0 20px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.frame header > .tel { width: 80px; height: 24px; line-height: 24px; font-size: 12px; color: #295da6; letter-spacing: 1px; margin: 15px 0 0; background: #fff; text-align: center; }
+.frame header > a img ,
+.frame header > a span {
+	display: inline-block;
+}
+.frame header > a img { width: 36px; height: 36px; border-radius: 18px; margin: 9px 13px 0 0; }
+.frame header > a span { color: #fff; vertical-align: -7px; font-size: 15px; }
+
+#preview { height: 667px; width: 375px; margin: 0 auto; background: #f5f5f5; border: 1px solid #ccc; position: relative; }
+#preview label { font-weight: normal; }
+#preview label em { font-style: normal; }
+/*#preview footer { position: relative; }*/
+#preview footer > .pull-left { width: 50%; }
+#preview footer.clearfix:before { content: ''; width: 1px; height: 23px; position: absolute; left: 50%; top: 13px; background: #fff; }
+#preview .btn { padding: 0; border-radius: 0; }
+#preview h2 { margin: 0; }

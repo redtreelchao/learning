@@ -1,0 +1,74 @@
+:global {
+  @import 'base';
+  @import '~normalize.css/normalize';
+
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  html {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: STHeitiSC-Medium;
+  }
+
+a{
+  text-decoration: none;
+  color: black;
+}
+  #root{
+    background: #fff;
+    height: 100%;
+  }
+  .clear{clear:both; height: 0; line-height: 0; font-size: 0}
+  *,
+  *:before,
+  *:after {
+   margin: 0;
+    box-sizing: inherit;
+  }
+  .slick-list{
+    overflow-x: hidden;
+
+  }
+  .slick-slider{
+    position: relative;
+  }
+  .slick-dots {
+    height: 20px;
+    width: 200px;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom:5px;
+    li{
+      float: left;
+      list-style: none;
+      font-size: 0;
+      width: 20px;
+      height: 20px;
+
+      button{
+        width: 12px;
+        height: 12px;
+        border: 0;
+        border-radius: 12px;
+        background: darkgray;
+      }
+      &.slick-active>button{
+        background: #ffffff;
+      }
+    }
+  }
+.container{
+    height:100%;
+}
+.container>div{
+    height:100%;
+}
+}

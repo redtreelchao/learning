@@ -1,0 +1,17 @@
+.month { margin-top:20px; }
+.month ul { list-style:none; margin:0px; padding:0px; }
+.month ul li { float:left; width:14%; text-align:right; height:180px; position:relative; border-bottom:#EEE solid 1px; overflow:hidden; }
+.month ul .week { text-align:center; font-size:22px; padding:5px 0px 20px 0px; height:auto; }
+.month ul li b { font-size:29px; color:#CCC; display:block; }
+.month ul .disabled b { color:#EEE; }
+.month ul li > div { font-style:normal; margin-top:10px; font-size:16px; font-weight:bold; position:absolute; top:50px; left:10px; right:0px; }
+.month ul li > div .label { cursor:pointer; font-size:14px; }
+
+@media screen and (min-width: 768px) {
+	.month ul li { height:160px; }
+}
+
+@media screen and (max-width: 1119px) {
+	.month ul li { height:120px; }
+	.month ul li > div .label { cursor:pointer; font-size:12px; }
+}

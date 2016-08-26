@@ -1,0 +1,27 @@
+
+.hour-plans { width:100%; font-size:0; text-align:center; }
+.hour-plans span { display:inline-block; vertical-align:top; overflow:hidden; margin-top:1px; position:relative; z-index:0; }
+.hour-plans span:after,
+.hour-plans span:before { content:""; display:block; height:0; padding-top:100%; margin-left:1px; margin-bottom:1px; background:#ddd; position:relative; z-index:0; }
+.hour-plans span:after { background:#fff; position:absolute; padding-top:200%; width:200%; top:-100%; left:80%; z-index:1; opacity:.2;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.hour-plans span:hover { z-index:1; }
+.hour-plans span:hover:before { background:#f0ad4e; opacity:1; }
+.hour-plans span:hover:after { opacity:.5; }
+
+.hour-plans.plan5s span { width:2.77777%; }
+.hour-plans.plan10s span { width:3.33333%; }
+.hour-plans.plan15s span { width:5%; height:5%; }
+
+.hour-plans .auto:before { background:#5bc0de; opacity:.5; }
+.hour-plans .select:before { background:#428bca; opacity:.8; }
+.hour-plans .select:hover:before { background:#428bca; }
+
+.hour-plans .disable:before,
+.hour-plans .disable:hover:before { background:#eee; opacity:1; }
+.hour-plans .disable:after { display:none; }

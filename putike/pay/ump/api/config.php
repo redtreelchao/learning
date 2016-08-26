@@ -1,0 +1,14 @@
+﻿<?php
+	//商户的私钥路径
+	define("privatekey",'./cert/6476_ShangHaiPuTiKe.key.pem');
+	//UMPAY的平台证书路径
+	define("platcert",'./cert/cert_2d59.cert.pem');
+	//日志生成目录
+	define("logpath","./umpLog/");
+	//记录日志文件的同时是否在页面输出:要输出为true,否则为false
+	define("log_echo",false);
+	//UMPAY平台地址,根据实际情况修改
+	define("plat_url","http://pay.soopay.net");
+	//支付产品名称:标准支付spay 
+	define("plat_pay_product_name","spay");
+?>
